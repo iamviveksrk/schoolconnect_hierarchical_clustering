@@ -18,13 +18,12 @@ format:
 
 ![](jigsaw.png)
 
-How would solve a Jigsaw Puzzle?
+How would you solve a Jigsaw Puzzle?
 
 ## Typical Process
 
 - Begin by trying to identify 2 pieces that are *similar* to each other and combine them (cluster).
-- Then perhaps try finding another piece that is similar to existing clusters and combine.
-- Continue this process of combiing pieces/clusters till the completion.
+- Continue this process of combining pieces/clusters till completion.
 - This is *informally* the process of Hierarchical Clustering!
 
 ## Example
