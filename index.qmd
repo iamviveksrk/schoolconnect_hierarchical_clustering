@@ -1,0 +1,62 @@
+---
+title: "Hierarchical Clustering & Cluster Interpretability"
+subtitle: "School Connect: Intro to DS & AI"
+institute: "Indian Institute of Technology, Madras"
+author: "Vivek Sivaramakrishnan"
+editor:
+    render-on-save: true
+format: 
+    revealjs:
+        theme: [simple, theme.scss]
+        incremental: true
+        mermaid:
+            theme: dark
+        chalkboard: true
+---
+
+## Jigsaw
+
+![](jigsaw.png)
+
+How would solve a Jigsaw Puzzle?
+
+## Typical Process
+
+- Begin by trying to identify 2 pieces that are *similar* to each other and combine them (cluster).
+- Then perhaps try finding another piece that is similar to existing clusters and combine.
+- Continue this process of combiing pieces/clusters till the completion.
+- This is *informally* the process of Hierarchical Clustering!
+
+## Example
+
+![](p1.png)
+
+## ✨Dendrograms✨
+
+![](p2.png)
+
+## Clusters from Dendrograms ✂️
+
+```{=html}
+<iframe width="950" height="600" src="anim.html"></iframe>
+```
+
+## Some terms {.smaller}
+
+- The clustering we just demonstrated is *Agglomerative* (Bottom-Up) using *Single Linkage*.
+
+:::: {layout="[ 50, 50 ]"}
+
+::: {#first-column .fragment}
+**Single Linkage**
+![](single.png)
+:::
+
+::: {#second-column .fragment}
+**Complete Linkage**
+![](complete.png)
+:::
+
+::::
+
+- The linkages require a *Distance Matrix*.
